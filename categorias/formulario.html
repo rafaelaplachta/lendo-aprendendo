@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Cadastro de Livros-Livraria Lendo e Aprendendo</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <header>
+        <center>
+            <img src="../imagens/livro.png" alt="Logo do site. Na imagem há um livro aberto" width="135" height="75">
+
+            <h1>Livraria Lendo e Aprendendo</h1>
+            <h1>CADASTRO</h1>
+        </center>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li><br>
+                <li><a href="aventura.html">Aventura</a></li><br>
+                <li><a href="auto-ajuda.html"> Auto-ajuda</a></li><br>
+                <li><a href="biografia.html">Biografia</a></li><br>
+                <li><a href="suspense.html">Suspense</a></li><br>
+                <li><a href=""> Cadastro de livros</a></li><br>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <center>
+
+            <h2>Cadastre seu livro, preenchehendo os campos abaixo:</h2>
+            <br><br>
+            <p>Os campos marcados com (*) são de preenchimento obrigatório.</p>
+            <form method="POST" action="" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Dados do livro</legend>
+                    <div>
+                        <label for="titulo">*Título do livro:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </div>
+                    <br><br>
+                    <div>
+                        <label for="autor">*Autor do livro:</label>
+                        <input type="text" id="autor" name="autor" required>
+                    </div>
+                    <br><br>
+                    <div>
+                        <label for="categoria">Selecione a categoria do livro:</label>
+                        <select name="categoria" id="categoria">
+                            <option value="">Selecione</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="auto-ajuda">Auto-ajuda</option>
+                            <option value="drama">Drama</option>
+                            <option value="ensaio">Ensaio</option>
+                            <option value="ficção">ficção</option>
+                            <option value="novela">Novela</option>
+                            <option value="poesia">Poesia</option>
+                            <option value="romance">romance</option>
+                            <option value="suspense">suspense</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div>
+
+                        <fieldset>
+                            <legend>Escolha o tipo do livro:</legend>
+                            <input type="radio" name="tipo" id="texto" value="texto"> <label for="texto">Texto</label>
+                            <input type="radio" name="tipo" id="áudio" value="áudio"> <label for="áudio">Áudio</label>
+                        </fieldset>
+
+                    </div>
+                    <br><br>
+                    <div>
+                        <fieldset>
+                            <legend>*Sinopse do livro:</legend>
+
+                            <label for="Sinopse">*Escreva a Sinopse do livro:</label>
+                            <textarea name="Sinopse" id="Sinopse" required></textarea>
+                        </fieldset>
+
+                    </div>
+                    <br><br>
+
+                    <div>
+                        <label for="livro">*Anexar livro:</label>
+                        <input type="file" id="livro" name="livro" required>
+                    </div>
+                    <br><br>
+                </fieldset>
+
+
+                <br><br>
+
+                <input type="submit" name="salvar-livro" value="Cadastrar livro!">
+            </form>
+        </center>
+    </section>
+    <br><br><br><br><br>
+    <section>
+        <h2><a href="../index.html" target="_blank">Voltar à Página Inicial</a></h2>
+    </section>
+    <br><br><br><br><br>
+    <footer>
+        <center>
+            <h2><a href="formulario.html">Cadastre seus livros</a></h2>
+
+            <h2>Quer navegar mais no mundo da leitura? <br> Acesse os links abaixo:</h2>
+            <ol>
+                <li><a href="https://visionvox.com.br/" target="_blank">Visionvox (abre em nova aba)</a></li><br>
+                <li><a href="https://www.trocadelivros.com.br/" target="_blank">Troca de Livros (abre em nova aba)</a>
+                </li><br>
+                <li><a href="https://www.estantevirtual.com.br/" target="_blank">Estante Virtual (abre em nova aba)</a>
+                </li>
+            </ol>
+
+        </center>
+    </footer>
+</body>
+
+</html>
